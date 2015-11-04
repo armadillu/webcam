@@ -48,17 +48,18 @@
 				<string key="NSClassName">NSApplication</string>
 			</object>
 			<object class="NSWindowTemplate" id="266751683">
-				<int key="NSWindowStyleMask">263</int>
+				<int key="NSWindowStyleMask">271</int>
 				<int key="NSWindowBacking">2</int>
 				<string key="NSWindowRect">{{25, 232}, {867, 532}}</string>
-				<int key="NSWTFlags">1886912512</int>
+				<int key="NSWTFlags">1886913536</int>
 				<string key="NSWindowTitle">WebCam</string>
 				<string key="NSWindowClass">NSWindow</string>
 				<object class="NSMutableString" key="NSViewClass">
 					<characters key="NS.bytes">View</characters>
 				</object>
 				<nil key="NSUserInterfaceItemIdentifier"/>
-				<string key="NSWindowContentMinSize">{213, 107}</string>
+				<string key="NSWindowContentMaxSize">{867, 533}</string>
+				<string key="NSWindowContentMinSize">{867, 532}</string>
 				<object class="NSView" key="NSWindowView" id="641146188">
 					<reference key="NSNextResponder"/>
 					<int key="NSvFlags">256</int>
@@ -265,7 +266,7 @@
 											</object>
 										</object>
 									</object>
-									<int key="NScvFlags">4</int>
+									<int key="NScvFlags">2</int>
 									<bool key="NSAutomaticallyAdjustsContentInsets">YES</bool>
 								</object>
 								<object class="NSScroller" id="771704670">
@@ -385,6 +386,9 @@
 				<string key="NSMaxSize">{10000000000000, 10000000000000}</string>
 				<string key="NSFrameAutosaveName">webcam</string>
 				<bool key="NSWindowIsRestorable">YES</bool>
+				<object class="NSAppearance" key="NSAppearance">
+					<string key="NSAppearanceName">NSAppearanceNameAqua</string>
+				</object>
 			</object>
 			<object class="NSMenu" id="20336177">
 				<string key="NSTitle">MainMenu</string>

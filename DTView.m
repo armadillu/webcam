@@ -104,7 +104,7 @@ float JPEG = .7;
 
 - (void) capture{
 
-	//myCaptureTimer = [NSTimer scheduledTimerWithTimeInterval:CAPTURE target:self selector:@selector(capture) userInfo:nil repeats:NO];
+	myCaptureTimer = [NSTimer scheduledTimerWithTimeInterval:CAPTURE target:self selector:@selector(capture) userInfo:nil repeats:NO];
 
 //	NSBitmapImageRep *bmRep;
 //	[textOverlay lockFocus];
@@ -112,14 +112,27 @@ float JPEG = .7;
 //	[textOverlay unlockFocus];
 //	NSImage * textOverlayImg = [[NSImage alloc] initWithSize:[textOverlay frame].size];
 
+
 	NSImage * img = [self imageFromGworld:camGWorld];
 	NSRect crect = NSMakeRect(0,0,WIDTH, HEIGHT);
 
 	[img lockFocus];
 
-	NSImage * overlayImg = [overlay image];
-	NSPoint p = NSMakePoint(WIDTH - [overlayImg size].width, 0);
-	[overlayImg drawAtPoint:p fromRect:crect operation:NSCompositeSourceOver fraction:1.0];
+	NSImage * textOverlayImg = NULL;
+
+
+	if(![overlay isHidden]){
+		NSImage * overlayImg = [overlay image];
+		NSPoint p = NSMakePoint(WIDTH - [overlayImg size].width, 0);
+		[overlayImg drawAtPoint:p fromRect:crect operation:NSCompositeSourceOver fraction:1.0];
+	}
+
+	if(![textOverlay isHidden]){
+		NSPoint p = NSMakePoint(0, 0);
+		textOverlayImg = [textOverlay imageRepresentation];
+		[textOverlayImg drawAtPoint:p fromRect:crect operation:NSCompositeSourceOver fraction:1.0];
+	}
+
 
 	NSBitmapImageRep *tempfile = [[NSBitmapImageRep alloc] initWithFocusedViewRect:crect];
 	NSData *imageData = [tempfile representationUsingType:NSJPEGFileType properties: 
@@ -138,7 +151,10 @@ float JPEG = .7;
 
 	[tempfile release];
 	[file release];
-	//[textOverlayImg release];
+
+	if(![textOverlay isHidden]){
+		[textOverlayImg release];
+	}
 
 }
 

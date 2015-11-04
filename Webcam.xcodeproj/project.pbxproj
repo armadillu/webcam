@@ -15,6 +15,7 @@
 		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
 		BB06339D0A8CF18B00D055BC /* MyTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = BB06339C0A8CF18B00D055BC /* MyTextView.m */; };
+		BB2723CC1BEA8F880097394E /* NSView+ImageRepresentation.m in Sources */ = {isa = PBXBuildFile; fileRef = BB2723CB1BEA8F880097394E /* NSView+ImageRepresentation.m */; };
 		BB6294650A8D069000E74477 /* MyScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = BB6294640A8D069000E74477 /* MyScrollView.m */; };
 		BB99C9220A8CD680006C37C1 /* evil.icns in Resources */ = {isa = PBXBuildFile; fileRef = BB99C9210A8CD680006C37C1 /* evil.icns */; };
 		BBABB8A30A8E001500A2C8DE /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = BBABB8A10A8E001500A2C8DE /* Credits.rtf */; };
@@ -39,6 +40,8 @@
 		8D1107320486CEB800E47090 /* WebCam.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WebCam.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB06339B0A8CF18B00D055BC /* MyTextView.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = MyTextView.h; sourceTree = "<group>"; };
 		BB06339C0A8CF18B00D055BC /* MyTextView.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = MyTextView.m; sourceTree = "<group>"; };
+		BB2723CA1BEA8F880097394E /* NSView+ImageRepresentation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSView+ImageRepresentation.h"; sourceTree = "<group>"; };
+		BB2723CB1BEA8F880097394E /* NSView+ImageRepresentation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSView+ImageRepresentation.m"; sourceTree = "<group>"; };
 		BB59119A08EE7E530049D2E3 /* stuff.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stuff.h; sourceTree = "<group>"; };
 		BB6294630A8D069000E74477 /* MyScrollView.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = MyScrollView.h; sourceTree = "<group>"; };
 		BB6294640A8D069000E74477 /* MyScrollView.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = MyScrollView.m; sourceTree = "<group>"; };
@@ -71,6 +74,8 @@
 				BB06339C0A8CF18B00D055BC /* MyTextView.m */,
 				BB6294630A8D069000E74477 /* MyScrollView.h */,
 				BB6294640A8D069000E74477 /* MyScrollView.m */,
+				BB2723CA1BEA8F880097394E /* NSView+ImageRepresentation.h */,
+				BB2723CB1BEA8F880097394E /* NSView+ImageRepresentation.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -212,6 +217,7 @@
 			files = (
 				8D11072D0486CEB800E47090 /* main.m in Sources */,
 				55769533088E4FF000233E2E /* DTView.m in Sources */,
+				BB2723CC1BEA8F880097394E /* NSView+ImageRepresentation.m in Sources */,
 				55769539088E504300233E2E /* Camera.m in Sources */,
 				BB06339D0A8CF18B00D055BC /* MyTextView.m in Sources */,
 				BB6294650A8D069000E74477 /* MyScrollView.m in Sources */,

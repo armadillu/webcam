@@ -4,7 +4,7 @@
 
 
 #import "Camera.h"
-
+#import "NSView+ImageRepresentation.h"
 
 @interface DTView : NSQuickDrawView
 {
